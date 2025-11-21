@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Portfólio | Miriam L.</title>
+    <meta name="description" content="Conheça o portfólio de Miriam Lopes, desenvolvedora Frontend. Veja meus projetos, habilidades e como entrar em contato.">
+</head>
+
+<body>
+    <div class="tsparticles" class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#habilidades" class="menu-link">Habilidades</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./perfil.jpg" alt="Foto de Perfil" class="foto-perfil">
+        <h1 id="typewriter"></h1>
+        <p class="cabecalho-subtitulo">Desenvolvedora Front-End</p>
+    </main>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo fade">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+        <!-- Card 1 -->
+        <div class="projetos-card" onclick="abrirProjetos('https://srtmiah.github.io/calculadora/')">
+            <div class="fade fade-delay-1">
+                <img src="./calculadora.jpeg" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="projetos-nome">Calculadora Simples</h3>
+                    <p class="projetos-descricao">
+                        Uma calculadora básica desenvolvida com HTML, CSS e JavaScript que realiza operações aritméticas simples.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="projetos-card fade" onclick="abrirProjetos('https://srtmiah.github.io/quiz-de-logica-2.0/')">
+            <div class="fade fade-delay-2">
+                <img src="./quiz_de_logica.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="projetos-nome">Quiz De Lógica</h3>
+                    <p class="projetos-descricao">
+                        Um quiz interativo que testa suas habilidades de lógica com perguntas desafiadoras e respostas imediatas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="projetos-card fade" onclick="abrirProjetos('https://srtmiah.github.io/projeto3/')">
+            <div class="fade fade-delay-3">
+                <img src="./foto_perfil.jpg" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="projetos-nome">Exemplo de projeto</h3>
+                    <p class="projetos-descricao">
+                        Descrição do projeto exemplo, destacando suas funcionalidades e tecnologias utilizadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section id="sobre" class='sobre-mim'>
+        <h2 class="sobre-mim-titulo fade">Sobre Mim...</h2> 
+        <div class="fotos-sobre-mim"> 
+            <img src="mais sobre mim.jpg" alt="Foto de Miriam" class="foto-sobre-mim fade fade-delay-1"> 
+            <img src="mais sobre mim (2).jpg" alt="Foto de Miriam2" class="foto-sobre-mim fade fade-delay-2">
+            <img src="mais sobre mim (3).jpg" alt="Foto de Miriam3" class="foto-sobre-mim fade fade-delay-3">
+            <img src="mais sobre mim (4).jpg" alt="Foto de Miriam4" class="foto-sobre-mim fade fade-delay-4">
+        </div>
+        <div class="sobre-mim-caixa fade fade-delay-5">
+            <p class="mais-sobre-mim-paragrafo fade fade-delay-1"> Olá! Meu nome é Míriam Lopes e minha paixão pela tecnologia vem desde a infância. Sempre fui curiosa sobre como o mundo digital funcionava, mas por muito tempo não sabia exatamente qual caminho seguir ou como chegar lá. Essa curiosidade me levou a escolher a faculdade de Gestão de Tecnologia da Informação, onde tive meu primeiro contato com programação através da linguagem Python. Foi nesse momento que percebi o quanto a lógica e o código poderiam transformar ideias em soluções reais.</p><br>
+            <p class="mais-sobre-mim-paragrafo fade fade-delay-2">Depois de Python, mergulhei no desenvolvimento web e conheci HTML e CSS, que me abriram as portas para criar páginas estruturadas e visualmente atraentes. Em seguida, descobri o JavaScript, que trouxe dinamismo e interatividade aos meus projetos, consolidando minha paixão pelo front-end. Essa combinação de tecnologias me mostrou que eu poderia unir criatividade e técnica para construir experiências digitais completas e envolventes.</p><br>
+            <p class="mais-sobre-mim-paragrafo fade fade-delay-3">Hoje, continuo expandindo meus conhecimentos, explorando frameworks modernos, boas práticas de design responsivo e ferramentas como Git e GitHub para versionamento e colaboração. Sou movida pela curiosidade, pela busca constante de evolução e pelo desejo de entregar projetos de alta qualidade que sejam acessíveis, inclusivos e inspiradores.</p><br>
+            <p class="sobre-mim-centralizar fade fade-delay-4">Se você procura alguém comprometida, criativa e apaixonada por tecnologia desde sempre, será um prazer colaborar com você!</p>
+        </div>
+    </section>   
+
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades-titulo fade">Habilidades</h2>
+        <ul class="habilidades-lista">
+            <li class="habilidade fade fade-delay-1"><i class="fa-brands fa-html5"></i> HTML5</li>
+            <li class="habilidade fade fade-delay-2"><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+            <li class="habilidade fade fade-delay-3"><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li class="habilidade fade fade-delay-4"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li>
+            <li class="habilidade fade fade-delay-5"><i class="fa-brands fa-git-alt"></i> Git e GitHub</li>
+        </ul>
+    </section>
+
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo fade">Vamos trabalhar juntos?</h2>
+        <p class="contato-texto fade fade-delay-1">Escolha por onde entrar em contato comigo!</p>
+        <ul>
+            <li class="contato-item fade fade-delay-2">
+                <i class="fa-brands fa-linkedin"></i> 
+                <a href="www.linkedin.com/in/miriamlopes99" target="_blank">LinkedIn</a>
+            </li>
+            <li class="contato-item fade fade-delay-3">
+                <i class="fa-brands fa-instagram"></i> 
+                <a href="https://www.instagram.com/heymiah18" target="_blank">Instagram</a>
+            </li>
+            <li class="contato-item fade fade-delay-4">
+                <i class="fa-brands fa-whatsapp"></i> 
+                <a href="https://wa.me/5511975357007" target="_blank">WhatsApp</a>
+            </li>
+        </ul>
+    </section>
+    <footer class="rodape">
+        <p>&copy; 2024 Miriam Lopes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
