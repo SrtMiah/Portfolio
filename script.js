@@ -89,3 +89,24 @@ tsParticles.load("tsparticles",{
             }
         }
 });
+
+/// MENU HAMBUGUER
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+    const links = document.querySelectorAll(".menu-link");
+
+    ///abre/fecha ao clicar no botão
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+
+    ///fecha o menu ao clicar em qualquer link
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
+        });
+    });
+});

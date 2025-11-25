@@ -339,7 +339,6 @@ h1 {
 .rodape {
     text-align: center;
     padding: 1rem;
-    background: rgba(15, 23, 42, 0.5);
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
@@ -409,4 +408,268 @@ h1 {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--Claro);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 101;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(15, 23, 42, 0.6);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .foto-perfil {
+        height: 250px;
+        width: 250px;
+        margin-top: -70px;
+    }
+    h1 {
+        font-size: 3rem;
+        margin: 30px;
+    }
+    .cabecalho-subtitulo {
+        font-size: 1.5rem;
+    }
+    .projetos-caixa {
+        padding: 0 1rem;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+    .projetos-titulo {
+        font-size: 2.5rem;
+        margin-top: -30px;
+    }
+    .projeto {
+        max-width: 300px;
+        padding: 1rem;
+        font-size: 0.95rem;
+        margin: 0 auto 1.5rem;
+    }
+    .projetos-nome {
+        font-size: 1.8rem;
+    }
+    .projetos-descricao {
+        font-size: 1.3rem;
+    }
+    .sobre-mim-titulo {
+        margin-top: -30px;
+    }
+    .sobre-mim-caixa {
+        max-width: 300px;
+        padding: 1rem;
+        font-size: 0.95rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .habilidades-lista {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .habilidade {
+        width: 100%;
+        max-width: 300px;
+    }
+    .contato ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .contato a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+    .cabecalho-subtitulo {
+        font-size: 0.9rem;
+    }
+    .projetos-titulo {
+        font-size: 1.8rem;
+        margin-top: -200px;
+    }
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .projeto {
+        max-width: 100%;
+        font-size: 0.9rem;
+        padding: 0.8rem;
+        margin: 0 auto 1.2rem;
+        box-sizing: border-box;
+    }
+    .foto-sobre-mim {
+        width: 120px;
+        height: 120px;
+    }
+    .sobre-mim-caixa {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+    .habilidades-titulo {
+        margin-top: 140px;
+    }
+    .habilidades-lista {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin: 40px;
+    }
+    .habilidade {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+    .contato a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 25px;
+    }
+    .cabecalho-subtitulo {
+        font-size: 1.1rem;
+    }
+    .projetos-titulo {
+        font-size: 2.1rem;
+    }
+    .projetos-caixa {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0 2rem;
+        padding: 0 2rem;
+    }
+    .projeto {
+        max-width: 320px;
+        padding: 1.2rem;
+        font-size: 1rem;
+        margin: 0 auto1.5rem;
+    }
+    .sobre-mim-titulo {
+        font-size: 2.1rem;
+    }
+    .fotos-sobre-mim {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .sobre-mim-caixa {
+        max-width: 650px;
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+    .habilidades-titulo {
+        font-size: 2.1rem;
+    }
+    .habilidade {
+        max-width: 320px;
+        font-size: 1rem;
+    }
+    .contato a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .foto-perfil {
+        width: 220px;
+        height: 220px;
+    }
+    h1 {
+    font-size: 3.5rem;
+    margin: 40px;
+    }
+    .cabecalho-subtitulo {
+        font-size: 2rem;
+    }
+    .projetos-caixa {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+        padding: 0 3rem;
+        margin: 0 auto 2rem;
+    }
+    .sobre-mim-caixa {
+        max-width: 1100px;
+        padding: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+    .foto-sobre-mim {
+        width: 160px;
+        height: 160px;
+    }
+    .habilidade {
+        max-width: 350px;
+        font-size: 1.05rem;
+    }
+    .contato a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (mim-wihth: 1920px) {
+    .projetos-caixa {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 3rem;
+        padding: 0 4rem;
+    }
+    .projeto {
+        max-width: 380px;
+        padding: 1.8rem;
+        font-size: 1.1rem;
+        margin: 0 auto 2rem;
+    }
+}
+
+@media (min-width: 2560) {
+    .projetos-caixa {
+        grid-template-columns: repeat(minmax(400px, 1fr));
+        gap: 3.5rem;
+        padding: 0 6rem;
+    }
+    .projeto {
+        max-width: 420px;
+        padding: 2rem;
+        font-size: 1.15rem;
+        margin: 0 auto 2.5rem;
+    }
 }
